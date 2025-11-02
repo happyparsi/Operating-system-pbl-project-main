@@ -1,8 +1,8 @@
 #  PREDLOCK - Predictive Deadlock Detection & Recovery Tool
 
-## 🌟 Features
+## Features
 
-### 🎯 Core Capabilities
+###  Core Capabilities
 
 #### **1. Deadlock Detection**
 - **Resource Allocation Graph (RAG)** with cycle detection
