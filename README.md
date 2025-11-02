@@ -1,12 +1,4 @@
-# 🔒 PREDLOCK - Predictive Deadlock Detection & Recovery Tool
-
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Flask](https://img.shields.io/badge/Flask-3.0.0-green.svg)](https://flask.palletsprojects.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-A comprehensive web-based operating system project that provides **dual-mode deadlock detection**, **predictive analysis using Banker's Algorithm**, and **intelligent recovery systems** for both simulated and real-time environments.
-
----
+#  PREDLOCK - Predictive Deadlock Detection & Recovery Tool
 
 ## 🌟 Features
 
@@ -18,7 +10,7 @@ A comprehensive web-based operating system project that provides **dual-mode dea
 - Real-time detection in manual simulations
 - Visual graph representation
 
-#### **2. Deadlock Prediction** ⭐
+#### **2. Deadlock Prediction** 
 - **Banker's Algorithm** implementation
 - Safe state analysis
 - Safe sequence generation
@@ -27,7 +19,7 @@ A comprehensive web-based operating system project that provides **dual-mode dea
 #### **3. Risk Assessment**
 - Multi-factor risk scoring (0-100)
 - Real-time process risk analysis
-- Color-coded risk levels (LOW 🟢 / MEDIUM 🟡 / HIGH 🔴)
+- Color-coded risk levels (LOW / MEDIUM / HIGH)
 - Continuous monitoring
 
 #### **4. Intelligent Recovery**
@@ -38,7 +30,7 @@ A comprehensive web-based operating system project that provides **dual-mode dea
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -96,8 +88,8 @@ Perfect for understanding deadlock concepts and algorithms.
    ```
 
 4. **Observe Results**
-   - **Detection Status**: 🚨 Deadlock detected
-   - **Prediction Status**: ⚠️ Unsafe state
+   - **Detection Status**:  Deadlock detected
+   - **Prediction Status**:  Unsafe state
    - **Recovery Options**: Displayed automatically
 
 #### Example: Dining Philosophers Problem
@@ -120,7 +112,7 @@ P3 → Fork4
 P4 → Fork5
 P5 → Fork1
 
-Result: Deadlock detected! 🚨
+Result: Deadlock detected! 
 ```
 
 ---
@@ -142,12 +134,12 @@ Monitor live Windows processes with risk assessment.
   - Visual risk indicators
 
 - **Process Classification**
-  - 🔴 Critical System Processes (cannot terminate)
-  - 🟡 System Processes (caution required)
-  - 🟢 User Processes (safe to manage)
+  - Critical System Processes (cannot terminate)
+  -  System Processes (caution required)
+  -  User Processes (safe to manage)
 
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Project Structure
 
@@ -169,7 +161,7 @@ predlock/
 
 ---
 
-## 🧠 Algorithms Implemented
+## Algorithms Implemented
 
 ### 1. Resource Allocation Graph (RAG) - Deadlock Detection
 
@@ -217,7 +209,7 @@ def check_safe_state():
 
 ---
 
-## 🎨 User Interface
+##  User Interface
 
 ### Dashboard
 
@@ -258,48 +250,27 @@ def check_safe_state():
 **Scenario 1: No Deadlock**
 ```
 P1 → R1 (Allocate)
-Result: ✅ Safe state, Safe sequence: P1
+Result: Safe state, Safe sequence: P1
 ```
 
 **Scenario 2: Simple Deadlock**
 ```
 P1 → R1, P2 → R2 (Allocate)
 P1 → R2, P2 → R1 (Request)
-Result: 🚨 Deadlock detected!
+Result: Deadlock detected!
 ```
 
 **Scenario 3: Three Process Deadlock**
 ```
 P1 → R1, P2 → R2, P3 → R3 (Allocate)
 P1 → R2, P2 → R3, P3 → R1 (Request)
-Result: 🚨 Circular wait detected!
+Result: Circular wait detected!
 ```
 
 ---
 
-## 🎓 Educational Use
 
-### Learning Objectives
-
-Students will understand:
-- ✅ Deadlock conditions (Mutual Exclusion, Hold & Wait, No Preemption, Circular Wait)
-- ✅ Detection vs Prevention vs Avoidance
-- ✅ Resource Allocation Graphs
-- ✅ Banker's Algorithm
-- ✅ Safe state analysis
-- ✅ Recovery strategies
-
-### Suggested Exercises
-
-1. **Exercise 1**: Create and detect a deadlock
-2. **Exercise 2**: Use prediction to prevent deadlock
-3. **Exercise 3**: Compare different recovery options
-4. **Exercise 4**: Analyze real-time process risks
-5. **Exercise 5**: Design custom deadlock scenarios
-
----
-
-## 🌐 Technology Stack
+##  Technology Stack
 
 ### Backend
 - **Flask** 3.0.0 - Web framework
@@ -320,7 +291,7 @@ Students will understand:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -342,7 +313,7 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Operating System Concepts** by Silberschatz, Galvin, and Gagne
 - **Modern Operating Systems** by Andrew S. Tanenbaum
@@ -352,7 +323,7 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📈 Future Roadmap
+##  Future Roadmap
 
 ### Version 2.0
 - [ ] Distributed deadlock detection
@@ -370,7 +341,7 @@ Contributions are welcome! Please follow these steps:
 ---
 
 
-## 🎯 Key Metrics
+##  Key Metrics
 
 - **Detection Accuracy**: 100% (in manual mode)
 - **Prediction Accuracy**: Based on Banker's Algorithm
@@ -380,7 +351,7 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## ⚡ Performance
+## Performance
 
 - **Detection Complexity**: O(V + E)
 - **Prediction Complexity**: O(m × n²)
@@ -389,7 +360,7 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 🔐 Security Considerations
+##  Security Considerations
 
 - Process termination requires appropriate permissions
 - System process protection prevents accidental crashes
@@ -398,45 +369,4 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📚 References
 
-1. Coffman, E. G., Elphick, M., & Shoshani, A. (1971). "System Deadlocks"
-2. Dijkstra, E. W. (1965). "Cooperating Sequential Processes"
-3. Habermann, A. N. (1969). "Prevention of System Deadlocks"
-4. Holt, R. C. (1972). "Some Deadlock Properties of Computer Systems"
-
----
-
-## 💡 Tips & Tricks
-
-### Best Practices
-
-1. **Start Simple**: Begin with 2 processes and 2 resources
-2. **Use Prediction**: Check safe state before making allocations
-3. **Monitor Risk**: Keep eye on risk scores in real-time mode
-4. **Test Recovery**: Try different recovery strategies
-5. **Visualize**: Use the graph to understand dependencies
-
-### Common Pitfalls
-
-❌ Creating too many processes at once  
-❌ Ignoring prediction warnings  
-❌ Terminating critical system processes  
-❌ Not checking safe sequences  
-
-✅ Build complexity gradually  
-✅ Heed prediction alerts  
-✅ Review risk assessments  
-✅ Understand safe sequences  
-
----
-
-## 🎉 Thank You!
-
-Thank you for using **Predlock**! If you find this project helpful, please consider:
-
-- ⭐ Starring the repository
-- 🐛 Reporting bugs
-- 💡 Suggesting features
-- 📢 Sharing with others
-- 🤝 Contributing code
